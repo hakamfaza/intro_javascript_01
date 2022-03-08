@@ -1,10 +1,4 @@
 // Tugas 4
-let me = {
-    name : 'Muhamad Hakam Faza',
-    email : 'hakamfaza@gmail.com',
-    hobby : 'Membaca buku',
-}
-
 let data = {
     id: 1,
     name: "Leanne Graham",
@@ -19,12 +13,18 @@ let data = {
     },
     phone: "1-770-736-8031 x56442",
     website: "hildegard.org",
-    ...me
 }
-console.log(data)
+
+let me = {
+    ...data,
+    name : 'Muhamad Hakam Faza',
+    email : 'hakamfaza@gmail.com',
+    hobby : 'Membaca buku',
+}
+
+console.log(me)
 
 const dest = data.address;
 const {street, city} = dest;
 
-console.log(street)
-console.log(data.address.street)
+console.log(street, city)
