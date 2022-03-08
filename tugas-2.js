@@ -1,8 +1,8 @@
 // Tugas 2
-let mtk = 200
-let bahasaIndonesia = 0
-let bahasaInggris = 0
-let ipa = 0
+let mtk = 80
+let bahasaIndonesia = 90
+let bahasaInggris = 79
+let ipa = 86
 
 let rataRata = (mtk + bahasaIndonesia + bahasaInggris +ipa) / 4;
 
