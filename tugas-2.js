@@ -1,14 +1,13 @@
-// Tugas 2
-let mtk = 80
-let bahasaIndonesia = 90
-let bahasaInggris = 79
-let ipa = 86
+let mtk = 90
+let bahasaIndonesia = 80
+let bahasaInggris = 80
+let ipa = 90
 
 let rataRata = (mtk + bahasaIndonesia + bahasaInggris +ipa) / 4;
 
 let validasi = typeof(mtk && bahasaIndonesia && bahasaInggris && ipa);
 
-if (validasi === 'number' && mtk || bahasaIndonesia || bahasaInggris || ipa !== undefined) {
+if (validasi === 'number' && mtk && bahasaIndonesia && bahasaInggris && ipa !== undefined) {
     if (rataRata >= 90 && rataRata <= 100) {
         console.log(`Rata-rata = ${rataRata}
         Grade = A`)
@@ -28,5 +27,5 @@ if (validasi === 'number' && mtk || bahasaIndonesia || bahasaInggris || ipa !== 
         console.log(undefined)
     }
 } else {
-    console.log('Semua nilai harus diisi dan bertipe number');
+    console.log('Semua nilai harus diisi!');
 }
